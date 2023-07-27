@@ -12,11 +12,14 @@ export const ProductCard = ({ product }) => {
           width={356}
           height={356}
         />
-          <p className="text-lg mt-3">{product?.productName}</p>
-          <p>Category: {product?.category}</p>
-          <p>Price: {product?.price} $</p>
-          <p>Status: {product?.status}</p>
-          <p>Review: {product?.averageRating}</p>
+        <p className="text-lg mt-3">{product?.productName}</p>
+        <p>Category: {product?.category}</p>
+        <p>Price: {product?.price} $</p>
+        <p>Status: {product?.status}</p>
+        <p>Review: {product?.averageRating}</p>
+        <button className="btn btn-primary mt-2">
+          <Link href={`/product/${product._id}`}>View Details</Link>
+        </button>
       </div>
     </div>
   );
