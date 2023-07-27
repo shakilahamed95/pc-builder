@@ -27,7 +27,7 @@ const Navbar = () => {
 
 export default Navbar;
 
-const categoriesData = [
+export const categoriesData = [
   {
     title: "Processor",
     link: "processor",
