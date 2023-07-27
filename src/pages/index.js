@@ -1,7 +1,13 @@
+import RootLayout from "@/layout/RootLayout";
+
 export default function Home() {
   return (
     <div>
-      <button className="btn btn-primary">Primary</button>
     </div>
   );
 }
+
+
+Home.getLayout = function getLayout(page) {
+  return <RootLayout>{page}</RootLayout>;
+};
