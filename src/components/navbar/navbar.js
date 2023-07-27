@@ -30,30 +30,30 @@ export default Navbar;
 export const categoriesData = [
   {
     title: "Processor",
-    link: "processor",
+    link: "/processor",
   },
   {
     title: "Motherboard",
-    link: "motherboard",
+    link: "/motherboard",
   },
   {
     title: "RAM",
-    link: "ram",
+    link: "/ram",
   },
   {
     title: "Power Supply Unit",
-    link: "power-supply-unit",
+    link: "/power-supply-unit",
   },
   {
     title: "Storage Device",
-    link: "Storage-device",
+    link: "/Storage-device",
   },
   {
     title: "Monitor",
-    link: "monitor",
+    link: "/monitor",
   },
   {
     title: "Others",
-    link: "others",
+    link: "/others",
   },
 ];
