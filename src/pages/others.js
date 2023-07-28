@@ -22,7 +22,9 @@ OtherPage.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:5000/products/Others");
+  const res = await fetch(
+    "https://pc-builder-backend-one.vercel.app/products/Others"
+  );
   const data = await res.json();
   return {
     props: {
