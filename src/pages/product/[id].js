@@ -2,7 +2,6 @@ import RootLayout from "@/layout/RootLayout";
 import Image from "next/image";
 import { AiOutlineStar } from "react-icons/ai";
 export default function ProductDetailsPage({ product }) {
-  console.log(product);
   return (
     <div className="container mx-auto px-5 md:px-0">
       <h3 className="text-3xl text-center text-black my-12">

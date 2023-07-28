@@ -4,10 +4,16 @@ import { ProductCard } from "@/components/ProductCard";
 import { categoriesData } from "@/components/navbar/Navbar";
 import RootLayout from "@/layout/RootLayout";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Home({ allProducts }) {
-  const shuffledProducts = allProducts.data.sort(() => Math.random() - 0.5);
-  const randomProducts = shuffledProducts.slice(0, 6);
+  const [activeProduct, setActiveProduct] = useState([]);
+  useEffect(() => {
+    const shuffledProducts = allProducts.data.sort(() => Math.random() - 0.5);
+    const randomProducts = shuffledProducts.slice(0, 6);
+    setActiveProduct(randomProducts);
+  }, [allProducts.data]);
+
   return (
     <div>
       <Banner />
@@ -16,11 +22,12 @@ export default function Home({ allProducts }) {
           Featured Products
         </h3>
         <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {randomProducts?.map((item) => (
-            <div key={item._id}>
-              <ProductCard product={item} />
-            </div>
-          ))}
+          {activeProduct &&
+            activeProduct.map((item) => (
+              <div key={item._id}>
+                <ProductCard product={item} />
+              </div>
+            ))}
         </div>
         <h3 className="text-3xl text-center text-black my-12">
           Featured Category
@@ -38,7 +45,7 @@ export default function Home({ allProducts }) {
           ))}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

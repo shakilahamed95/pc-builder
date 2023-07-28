@@ -1,7 +1,6 @@
-import Link from "next/link";
 import Image from "next/image";
 
-export const ProductCard = ({ product }) => {
+export const BuilderCard = ({ product }) => {
   return (
     <div className="flex items-center justify-center bg-slate-100">
       <div>
@@ -20,9 +19,7 @@ export const ProductCard = ({ product }) => {
             <p>Status: {product?.status}</p>
             <p>Review: {product?.averageRating}</p>
           </div>
-          <button className="btn btn-primary mt-2">
-            <Link href={`/product/${product._id}`}>View Details</Link>
-          </button>
+          <button className="btn btn-primary mt-2">Add To Builder</button>
         </div>
       </div>
     </div>
