@@ -1,4 +1,4 @@
-import { ProductCard } from "@/components/productCard";
+import { ProductCard } from "@/components/ProductCard";
 import RootLayout from "@/layout/RootLayout";
 
 export default function ProcessorPage({ processor }) {
