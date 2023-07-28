@@ -25,7 +25,7 @@ export const BuilderCard = ({ product }) => {
           <p>Category: {product?.category}</p>
           <p>Price: {product?.price} $</p>
           <p>Status: {product?.status}</p>
-          <p>Review: {product?.averageRating}</p>
+          <p>Rating: {product?.averageRating}</p>
           <button
             disabled={product.status === "Out of Stock"}
             onClick={() => handleAddToBuilder(product)}

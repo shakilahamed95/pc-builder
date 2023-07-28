@@ -9,7 +9,7 @@ export default function LoginPage() {
         className="bg-[#4B6BFB] px-4 py-2 rounded flex items-center gap-4 text-white cursor-pointer"
         onClick={() =>
           signIn("github", {
-            callbackUrl: "http://localhost:3000/pc-builder",
+            callbackUrl: "https://pc-builder-one.vercel.app/pc-builder",
           })
         }
       >

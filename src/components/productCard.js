@@ -14,13 +14,16 @@ export const ProductCard = ({ product }) => {
         />
         <div>
           <p className="text-lg mt-3">{product?.productName}</p>
-            <p>Category: {product?.category}</p>
-            <p>Price: {product?.price} $</p>
-            <p>Status: {product?.status}</p>
-            <p>Review: {product?.averageRating}</p>
-          <button className="btn btn-primary mt-2">
-            <Link href={`/product/${product._id}`}>View Details</Link>
-          </button>
+          <p>Category: {product?.category}</p>
+          <p>Price: {product?.price} $</p>
+          <p>Status: {product?.status}</p>
+          <p>Review: {product?.averageRating}</p>
+          <Link
+            className="btn btn-primary mt-2"
+            href={`/product/${product._id}`}
+          >
+            View Details
+          </Link>
         </div>
       </div>
     </div>

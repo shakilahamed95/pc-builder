@@ -5,9 +5,9 @@ const Navbar = () => {
   return (
     <div className="bg-[#4B6BFB] w-full py-1">
       <div className="container mx-auto flex items-center justify-between w-full">
-        <button className="btn btn-neutral">
-          <Link href={"/pc-builder"}>PC Builder</Link>
-        </button>
+        <Link className="btn btn-neutral" href={"/pc-builder"}>
+          PC Builder
+        </Link>
         <div className="flex items-center gap-1 sm:gap-4">
           <div className="dropdown dropdown-end dropdown-hover">
             <label tabIndex={0} className="btn btn-neutral m-1">
@@ -30,9 +30,9 @@ const Navbar = () => {
                 LogOut
               </button>
             ) : (
-              <button className="btn btn-neutral">
-                <Link href={"/login"}>Login</Link>
-              </button>
+              <Link className="btn btn-neutral" href={"/login"}>
+                Login
+              </Link>
             )}
           </div>
         </div>
