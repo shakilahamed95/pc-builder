@@ -3,7 +3,6 @@ import RootLayout from "@/layout/RootLayout";
 import { useRouter } from "next/router";
 
 function CategoryPage({ product }) {
-  console.log(product);
   const router = useRouter();
   const { category } = router.query;
 

@@ -2,7 +2,6 @@ import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
 const Navbar = () => {
   const { data: session } = useSession();
-  console.log(session);
   return (
     <div className="bg-[#4B6BFB] w-full py-1">
       <div className="container mx-auto flex items-center justify-between w-full">
