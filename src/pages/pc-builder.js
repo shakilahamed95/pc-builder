@@ -27,7 +27,7 @@ export default function PcBuilderPage() {
   };
 
   return (
-    <div className="container mx-auto pb-20">
+    <div className="container mx-auto pb-20 px-5 md:px-0">
       <h3 className="text-3xl text-center mt-10">Build Your Dream PC</h3>
       <div className="flex flex-col gap-5 mt-6">
         {categoriesData.slice(0, 6).map((item, index) => (

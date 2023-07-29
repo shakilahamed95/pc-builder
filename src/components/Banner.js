@@ -6,7 +6,7 @@ export default function Banner() {
       <div className="carousel w-full">
         <div id="item1" className="carousel-item w-full">
           <Image
-            src='/assests/1.jpg'
+            src='/assests/4.jpg'
             width={500}
             height={500}
             className="w-full h-[400px]"

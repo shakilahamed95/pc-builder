@@ -1,5 +1,6 @@
 import Banner from "@/components/Banner";
 import Footer from "@/components/Footer";
+import HeroSection from "@/components/HeroSection";
 import { ProductCard } from "@/components/ProductCard";
 import { categoriesData } from "@/components/navbar/Navbar";
 import RootLayout from "@/layout/RootLayout";
@@ -18,6 +19,9 @@ export default function Home({ allProducts }) {
     <div>
       <Banner />
       <div className="container mx-auto px-5 md:px-0">
+      <div className="mt-12">
+        <HeroSection />
+      </div>
         <h3 className="text-3xl text-center text-black my-12">
           Featured Products
         </h3>

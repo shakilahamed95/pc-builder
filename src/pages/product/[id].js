@@ -8,18 +8,18 @@ export default function ProductDetailsPage({ product }) {
         Details of:{" "}
         <span className="text-[#4B6BFB]">{product.productName}</span>
       </h3>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-5 pb-12">
-        <div className="w-full md:w-1/2">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-5 lg:gap-10 pb-12 w-full">
+        <div className="w-full lg:w-1/2 xl:w-5/12">
           <Image
             src={product?.image}
             alt="Product Picture"
             width={500}
             height={500}
-            className="rounded"
+            className="rounded w-full"
           />
         </div>
-        <div className="w-full md:w-1/2">
-          <p className="text-xl mt-3">{product?.productName}</p>
+        <div className="w-full lg:w-1/2 xl:w-7/12">
+          <p className="text-xl my-3">{product?.productName}</p>
           <p>Category: {product?.category}</p>
           <p>Status: {product?.status}</p>
           <p>Price: {product?.price} $</p>
