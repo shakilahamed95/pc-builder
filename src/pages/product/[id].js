@@ -36,7 +36,7 @@ export default function ProductDetailsPage({ product }) {
           </ul>
           <p className="mt-3">Individual Rating: {product?.individualRating}</p>
           <p>Average Rating: {product?.averageRating}</p>
-          <p className="text-xl mt-3">User Comments:</p>
+          <p className="text-xl mt-3">User Reviews:</p>
           <ul>
             {product?.reviews.map((item, index) => (
               <li key={index}>{item.text}</li>

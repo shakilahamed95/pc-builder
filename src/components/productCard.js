@@ -17,7 +17,7 @@ export const ProductCard = ({ product }) => {
           <p>Category: {product?.category}</p>
           <p>Price: {product?.price} $</p>
           <p>Status: {product?.status}</p>
-          <p>Review: {product?.averageRating}</p>
+          <p>Rating: {product?.averageRating}</p>
           <Link
             className="btn btn-primary mt-2"
             href={`/product/${product._id}`}
