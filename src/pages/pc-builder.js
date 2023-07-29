@@ -29,8 +29,11 @@ export default function PcBuilderPage() {
   return (
     <div className="container mx-auto pb-20 px-5 md:px-0">
       <h3 className="text-3xl text-center mt-10">Build Your Dream PC</h3>
+      <h5 className="text-2xl text-center mt-4">
+        Select at least 6 product to complete the building process
+      </h5>
       <div className="flex flex-col gap-5 mt-6">
-        {categoriesData.slice(0, 6).map((item, index) => (
+        {categoriesData.map((item, index) => (
           <div key={index}>
             <div className="flex items-center justify-between">
               <p className="px-5 py-3">{item.title}</p>
@@ -99,5 +102,9 @@ const categoriesData = [
   {
     title: "Monitor",
     category: "Monitor",
+  },
+  {
+    title: "Others",
+    category: "Others",
   },
 ];
